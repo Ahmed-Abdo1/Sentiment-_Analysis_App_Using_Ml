@@ -1,12 +1,7 @@
-import re
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer
+import re   ### for regex expressions
+from nltk.corpus import stopwords ### NLTK for NLP taskss 
 from nltk.tokenize import word_tokenize
-from sklearn.feature_extraction.text import CountVectorizer
+from nltk.stem import PorterStemmer
 
 def prepreoccessing(text):
   text=text.lower()
